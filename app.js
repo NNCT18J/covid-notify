@@ -11,8 +11,8 @@ const job = () => {
     fetch(config.dataURI).then(async (data) => {
         const cache = await data.json();
         const num = cache[0].area.find(el => el.name_jp == config.pref).npatients;
-        console.log(num);
         if (Number(savedData.num) != Number(num)) {
+            console.log(num);
             const diff = Number(num) - Number(savedData.num);
             fetch(config.postTo.uri, {
                 "headers": {
