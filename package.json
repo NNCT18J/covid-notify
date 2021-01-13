@@ -1,0 +1,23 @@
+{
+  "name": "corona-notify",
+  "version": "1.0.0",
+  "description": "Send notify about corona info to Discord",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NNCT3J/corona-notify.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NNCT3J/corona-notify/issues"
+  },
+  "homepage": "https://github.com/NNCT3J/corona-notify#readme",
+  "dependencies": {
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.1"
+  }
+}
