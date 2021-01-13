@@ -14,13 +14,13 @@ const job = () => {
         console.log(num);
         if (Number(savedData.num) != Number(num)) {
             const diff = Number(num) - Number(savedData.num);
-            fetch(config.postTo, {
+            fetch(config.postTo.uri, {
                 "headers": {
                     "content-type": "application/json",
                 },
                 "body": JSON.stringify({
-                    "username": "Nagano_Corona",
-                    "avatar_url": "https://pbs.twimg.com/profile_images/1247716266388774912/yOr0f8yU_400x400.jpg",
+                    "username": config.postTo.name,
+                    "avatar_url": config.postTo.pic,
                     "content": `${new Date().toISOString()}に更新されました\n${config.pref}:\`\`\`diff\n${savedData.num}人 → ${num}人\n${diff > 0 ? "+" : ""}${diff}人\n\`\`\``
                 }),
                 "method": "POST",
