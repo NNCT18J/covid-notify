@@ -2,4 +2,4 @@
 Send notify about corona info to Discord
 
 # Data form
-[新型コロナウイルス(COVID-19)感染症の対応について｜内閣官房新型コロナウイルス感染症対策推進室](https://corona.go.jp/dashboard/)
+[長野県内における新型コロナウイルス感染症の動向／長野県](https://www.pref.nagano.lg.jp/hoken-shippei/kenko/kenko/kansensho/joho/corona-doko.html)
